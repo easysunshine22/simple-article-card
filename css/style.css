@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D3D1E0;
+}
+
+html, *{
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+.main-body{
+    margin: 20px;
+}
+
+.inner-mainboby{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.top-nav-bar, .bottom-nav-bar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.top-nav-bar{
+    border:none;
+    border-bottom: 1px solid #D3D1E0;
+}
+.menu-nav .menu-nav-link, .bottom-menu-nav-link{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-bottom: 20px;
+
+}
+.bottom-menu-nav-link{
+    width: 480px;
+}
+.menu-nav .menu-nav-link li, .bottom-menu-nav-link li{
+    list-style: none;
+}
+
+.menu-nav .menu-nav-link li a, .bottom-menu-nav-link li a{
+    text-decoration: none;
+    color: #34384D;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.login-get-started-container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.login-get-started-container a{
+    border: 1px solid #34384D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+}
+
+.get-started-link{
+    margin-right: 40px;
+}
+
+.login-get-started-container a:hover{
+    background-color: #34384D;
+    color: #ffffff;
+}
+
+/*SEARCH STYLE*/
+.search{
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+.search i{
+    font-size: 20px;
+    color:#34384D;
+    cursor: pointer;
+}
+/*SEARCH STYLE*/
+
+
+#menu_button{
+    display: none;
+}
+.main-body-content{
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.main-body-content h2{
+    font-size: 45px;
+}
+
+.main-body-content-article-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-body-content-article{
+    width: 530px;
+    margin-right: 20px;
+}
+
+.product-img img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.product-articles h2{
+    font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+    color: #15192b;
+}
+.product-articles p{
+    max-width: 430px;
+    position: relative;
+    top: -20px;
+    color: #34384D;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+.profile-product{
+    display: flex;
+    position: relative;
+    top: -10px;
+    margin-bottom: 30px;
+}
+.profile-product span{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+.main-body-content-article h2{
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    max-width: 300px;
+}
+
+.second-product-articles-box{
+    max-width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.second-product-img{
+    max-width: 160px;
+    margin-right: 20px;
+}
+.second-product-img img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.second-product-text{
+    width: 320px;
+}
+.second-product-text h2{
+    font-size: 18px;
+    max-width: 220px;
+}
+
+.second-profile-product{
+    display: flex;
+    position: relative;
+}
+.second-profile-product span{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+@media (max-width: 550px){
+    .second-product-img{
+        width: 80%;
+    }
+}
+@media (max-width: 360px){
+    .login-get-started-container a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .get-started-link{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 460px){
+    .main-body{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 734px){
+    .menu-nav .menu-nav-link, .bottom-menu-nav-link{
+       display: none;
+    }
+
+    .main-body-content-article-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-body-content-article{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    #menu_button
+    {
+        width: 35px;
+        overflow: hidden;
+        display: block;
+        margin-left: 20px;
+        margin-top: 15px;
+        position: fixed;
+    }
+
+    #menu_checkbox
+    {
+        display: none;
+    }
+
+    #menu_label
+    {
+        position: relative;
+        display: block;
+        height: 29px;
+        cursor: pointer;
+    }
+
+    #menu_label:before, #menu_label:after, #menu_text_bar
+    {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+    }
+
+    #menu_label:before, #menu_label:after
+    {
+        content: '';
+        transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+    }
+
+    #menu_label:before
+    {
+        top: 0;
+    }
+
+    #menu_label:after
+    {
+        top: 12px;
+    }
+
+    #menu_text_bar
+    {
+        top: 24px;
+    }
+
+    #menu_text_bar:before
+    {
+        content: 'MENU';
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    #menu_checkbox:checked + #menu_label:before
+    {
+        left: -39px;
+    }
+
+    #menu_checkbox:checked + #menu_label:after
+    {
+        left: 39px;
+    }
+
+    #menu_checkbox:checked + #menu_label #menu_text_bar:before
+    {
+        animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+    }
+
+    @keyframes moveUpThenDown
+    {
+        0%{ top:0; }
+        50%{ top:-27px;}
+        100%{ top:-14px; }
+    }
+
+    @keyframes shakeWhileMovingUp
+    {
+        0%{ transform: rotateZ(0); }
+        25%{ transform:rotateZ(-10deg); }
+        50%{ transform:rotateZ(0deg); }
+        75%{ transform:rotateZ(10deg); }
+        100%{ transform:rotateZ(0); }
+    }
+
+    @keyframes shakeWhileMovingDown
+    {
+        0%{ transform:rotateZ(0); }
+        80%{ transform:rotateZ(3deg); }
+        90%{ transform:rotateZ(-3deg); }
+        100%{ transform:rotateZ(0); }
+    }
+}
