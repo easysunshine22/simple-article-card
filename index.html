@@ -11,12 +11,24 @@
     <div class="main-body">
         <div class="inner-mainboby">
             <div class="top-nav-bar">
-                <div id="menu_button">
-                    <input type="checkbox" id="menu_checkbox">
-                    <label for="menu_checkbox" id="menu_label">
-                      <div id="menu_text_bar"></div>
-                    </label>
-                  </div>
+                    <div id="menuToggle">
+                      <input type="checkbox" />
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <ul id="menu">
+                        <li><a href="">Product <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="">Pricing <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="">Use Cases <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="">Blog</a></li>
+                        <hr>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Remote</a></li>
+                        <li><a href="">Teamwork</a></li>
+                        <li><a href="">Productivity</a></li>
+                        <li><a href="">Marketing</a></li>
+                    </ul>
+                    </div>
                 <nav class="menu-nav">
                     <ul class="menu-nav-link">
                         <li><a href="">Product <i class="fas fa-chevron-down"></i></a></li>
@@ -41,7 +53,9 @@
                     </ul>
                 </nav>
                 <div class="search">
-                    <i class="fas fa-search"></i>
+                    <form action="" autocomplete="on">
+                        <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                    </form>
                 </div>
             </div>
 
